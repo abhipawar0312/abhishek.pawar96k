@@ -1,25 +1,114 @@
-body{
-  margin: 50px 50px 50px 50px;
-
-
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h3{
-  height: auto;
-    background-color: #40c5c142;
-}
-.header{
-
-
-
-
-
-
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
 }
 
-.contact{
+/* Container */
+.main {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
 
+/* Header */
+header.start {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  color: #0b7285;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.contact {
+  display: inline-block;
+  margin: 5px 10px;
+  color: #11999E;
   text-decoration: none;
+  font-size: 1rem;
+}
 
-  margin: 20px 10px 20px 10px;
+.contact:hover {
+  color: #0b7285;
+}
+
+/* Section Headers */
+section h3 {
+  font-size: 1.6rem;
+  color: #0b7285;
+  margin-bottom: 10px;
+}
+
+section h4 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #444;
+}
+
+/* Sections */
+section {
+  margin-bottom: 30px;
+}
+
+section hr {
+  border: none;
+  border-top: 2px solid #cce3e3;
+  margin-bottom: 15px;
+}
+
+/* Paragraphs & Lists */
+section p {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+section ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+section ul li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+/* Strong Text */
+strong {
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .main {
+    padding: 20px;
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  section h3 {
+    font-size: 1.3rem;
+  }
+
+  .contact {
+    display: block;
+    margin: 5px 0;
+  }
 }
